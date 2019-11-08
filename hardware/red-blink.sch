@@ -1,0 +1,300 @@
+EESchema Schematic File Version 4
+LIBS:red-blink-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATtiny:ATtiny402-SS U?
+U 1 1 5DC981FC
+P 5700 3500
+F 0 "U?" H 5171 3546 50  0000 R CNN
+F 1 "ATtiny402-SS" H 5171 3455 50  0000 R CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5700 3500 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATtiny202-402-AVR-MCU-with-Core-Independent-Peripherals_and-picoPower-40001969A.pdf" H 5700 3500 50  0001 C CNN
+	1    5700 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT?
+U 1 1 5DC992B0
+P 3800 3500
+F 0 "BT?" H 3918 3596 50  0000 L CNN
+F 1 "Battery_Cell" H 3918 3505 50  0000 L CNN
+F 2 "" V 3800 3560 50  0001 C CNN
+F 3 "~" V 3800 3560 50  0001 C CNN
+	1    3800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5DC999E0
+P 4500 3000
+F 0 "C?" H 4592 3046 50  0000 L CNN
+F 1 "0.1uF" H 4592 2955 50  0000 L CNN
+F 2 "" H 4500 3000 50  0001 C CNN
+F 3 "~" H 4500 3000 50  0001 C CNN
+	1    4500 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2900 5700 2800
+Wire Wire Line
+	4500 2800 4500 2900
+Wire Wire Line
+	4500 2800 5700 2800
+Wire Wire Line
+	4500 2800 3800 2800
+Wire Wire Line
+	3800 2800 3800 3300
+Connection ~ 4500 2800
+Wire Wire Line
+	5700 4100 5700 4200
+Wire Wire Line
+	5700 4200 3800 4200
+Wire Wire Line
+	3800 4200 3800 3600
+Wire Wire Line
+	4500 3100 4500 3200
+$Comp
+L power:GND #PWR?
+U 1 1 5DC9A9DB
+P 4500 3200
+F 0 "#PWR?" H 4500 2950 50  0001 C CNN
+F 1 "GND" H 4505 3027 50  0000 C CNN
+F 2 "" H 4500 3200 50  0001 C CNN
+F 3 "" H 4500 3200 50  0001 C CNN
+	1    4500 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DC9AD2E
+P 5700 4300
+F 0 "#PWR?" H 5700 4050 50  0001 C CNN
+F 1 "GND" H 5705 4127 50  0000 C CNN
+F 2 "" H 5700 4300 50  0001 C CNN
+F 3 "" H 5700 4300 50  0001 C CNN
+	1    5700 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 4300 5700 4200
+Connection ~ 5700 4200
+Wire Wire Line
+	6300 3200 6500 3200
+Wire Wire Line
+	6500 3200 6500 2400
+Wire Wire Line
+	6500 2400 6800 2400
+$Comp
+L Connector:Conn_01x03_Male J?
+U 1 1 5DC9D3E0
+P 7000 2400
+F 0 "J?" H 6972 2332 50  0000 R CNN
+F 1 "Conn_01x03_Male" H 6972 2423 50  0000 R CNN
+F 2 "" H 7000 2400 50  0001 C CNN
+F 3 "~" H 7000 2400 50  0001 C CNN
+	1    7000 2400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6800 2500 6700 2500
+Wire Wire Line
+	6700 2500 6700 2600
+Wire Wire Line
+	6800 2300 5700 2300
+Wire Wire Line
+	5700 2300 5700 2800
+Connection ~ 5700 2800
+$Comp
+L power:GND #PWR?
+U 1 1 5DC9E781
+P 6700 2600
+F 0 "#PWR?" H 6700 2350 50  0001 C CNN
+F 1 "GND" H 6705 2427 50  0000 C CNN
+F 2 "" H 6700 2600 50  0001 C CNN
+F 3 "" H 6700 2600 50  0001 C CNN
+	1    6700 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5DC9ECDF
+P 7700 3100
+F 0 "R?" V 7504 3100 50  0000 C CNN
+F 1 "100" V 7595 3100 50  0000 C CNN
+F 2 "" H 7700 3100 50  0001 C CNN
+F 3 "~" H 7700 3100 50  0001 C CNN
+	1    7700 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5DC9F284
+P 7700 3500
+F 0 "R?" V 7504 3500 50  0000 C CNN
+F 1 "100" V 7595 3500 50  0000 C CNN
+F 2 "" H 7700 3500 50  0001 C CNN
+F 3 "~" H 7700 3500 50  0001 C CNN
+	1    7700 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5DC9F4CB
+P 7700 3900
+F 0 "R?" V 7504 3900 50  0000 C CNN
+F 1 "100" V 7595 3900 50  0000 C CNN
+F 2 "" H 7700 3900 50  0001 C CNN
+F 3 "~" H 7700 3900 50  0001 C CNN
+	1    7700 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5DC9FCAF
+P 8200 3300
+F 0 "D?" V 8246 3232 50  0000 R CNN
+F 1 "LED" V 8155 3232 50  0000 R CNN
+F 2 "" V 8200 3300 50  0001 C CNN
+F 3 "~" V 8200 3300 50  0001 C CNN
+	1    8200 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5DCA0D9E
+P 8200 3700
+F 0 "D?" V 8246 3632 50  0000 R CNN
+F 1 "LED" V 8155 3632 50  0000 R CNN
+F 2 "" V 8200 3700 50  0001 C CNN
+F 3 "~" V 8200 3700 50  0001 C CNN
+	1    8200 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8200 3400 8200 3500
+Wire Wire Line
+	8200 3500 7800 3500
+Connection ~ 8200 3500
+Wire Wire Line
+	8200 3500 8200 3600
+Wire Wire Line
+	7800 3900 8200 3900
+Wire Wire Line
+	8200 3900 8200 3800
+Wire Wire Line
+	7800 3100 8200 3100
+Wire Wire Line
+	8200 3100 8200 3200
+$Comp
+L Device:LED_Small D?
+U 1 1 5DCA22F8
+P 8500 3300
+F 0 "D?" V 8454 3398 50  0000 L CNN
+F 1 "LED" V 8545 3398 50  0000 L CNN
+F 2 "" V 8500 3300 50  0001 C CNN
+F 3 "~" V 8500 3300 50  0001 C CNN
+	1    8500 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5DCA2835
+P 8500 3700
+F 0 "D?" V 8454 3798 50  0000 L CNN
+F 1 "LED" V 8545 3798 50  0000 L CNN
+F 2 "" V 8500 3700 50  0001 C CNN
+F 3 "~" V 8500 3700 50  0001 C CNN
+	1    8500 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8200 3100 8500 3100
+Wire Wire Line
+	8500 3100 8500 3200
+Connection ~ 8200 3100
+Wire Wire Line
+	8200 3500 8500 3500
+Wire Wire Line
+	8500 3500 8500 3400
+Wire Wire Line
+	8500 3500 8500 3600
+Connection ~ 8500 3500
+Wire Wire Line
+	8200 3900 8500 3900
+Wire Wire Line
+	8500 3900 8500 3800
+Connection ~ 8200 3900
+$Comp
+L Device:LED_Small D?
+U 1 1 5DCA3D76
+P 8800 3500
+F 0 "D?" V 8754 3598 50  0000 L CNN
+F 1 "LED" V 8845 3598 50  0000 L CNN
+F 2 "" V 8800 3500 50  0001 C CNN
+F 3 "~" V 8800 3500 50  0001 C CNN
+	1    8800 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_Small D?
+U 1 1 5DCA4204
+P 9100 3500
+F 0 "D?" V 9146 3432 50  0000 R CNN
+F 1 "LED" V 9055 3432 50  0000 R CNN
+F 2 "" V 9100 3500 50  0001 C CNN
+F 3 "~" V 9100 3500 50  0001 C CNN
+	1    9100 3500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8500 3100 8800 3100
+Wire Wire Line
+	8800 3100 8800 3400
+Connection ~ 8500 3100
+Wire Wire Line
+	8800 3100 9100 3100
+Wire Wire Line
+	9100 3100 9100 3400
+Connection ~ 8800 3100
+Wire Wire Line
+	8500 3900 8800 3900
+Wire Wire Line
+	8800 3900 8800 3600
+Connection ~ 8500 3900
+Wire Wire Line
+	8800 3900 9100 3900
+Wire Wire Line
+	9100 3900 9100 3600
+Connection ~ 8800 3900
+Wire Wire Line
+	6300 3300 7400 3300
+Wire Wire Line
+	7400 3300 7400 3100
+Wire Wire Line
+	7400 3100 7600 3100
+Wire Wire Line
+	6300 3400 7400 3400
+Wire Wire Line
+	7400 3400 7400 3500
+Wire Wire Line
+	7400 3500 7600 3500
+Wire Wire Line
+	6300 3500 7300 3500
+Wire Wire Line
+	7300 3500 7300 3900
+Wire Wire Line
+	7300 3900 7600 3900
+$EndSCHEMATC
