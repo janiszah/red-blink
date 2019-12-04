@@ -1,29 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Conn_01x03_Male
-#
-DEF Connector_Conn_01x03_Male J 0 40 Y N 1 F N
-F0 "J" 0 200 50 H V C CNN
-F1 "Connector_Conn_01x03_Male" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_1x??_*
-$ENDFPLIST
-DRAW
-S 34 -95 0 -105 1 1 6 F
-S 34 5 0 -5 1 1 6 F
-S 34 105 0 95 1 1 6 F
-P 2 1 1 6 50 -100 34 -100 N
-P 2 1 1 6 50 0 34 0 N
-P 2 1 1 6 50 100 34 100 N
-X Pin_1 1 200 100 150 L 50 50 1 1 P
-X Pin_2 2 200 0 150 L 50 50 1 1 P
-X Pin_3 3 200 -100 150 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Device_Battery_Cell
 #
 DEF Device_Battery_Cell BT 0 0 N N 1 F N
@@ -125,6 +102,23 @@ X GND 8 0 -600 100 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
+# electromechanics_ingus_SWT-2
+#
+DEF electromechanics_ingus_SWT-2 SW 0 40 N N 1 F N
+F0 "SW" 300 75 60 H V L BNN
+F1 "electromechanics_ingus_SWT-2" 50 -125 60 H I L BNN
+F2 "SWT-2" 200 -100 60 H I C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+P 2 0 1 0 100 0 325 50 N
+P 2 0 1 0 175 25 175 100 N
+P 2 0 1 0 225 25 225 100 N
+P 4 0 1 0 250 75 250 100 150 100 150 75 N
+X 1 1 0 0 100 R 50 50 1 1 P
+X 2 2 400 0 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # power_GND
 #
 DEF power_GND #PWR 0 0 Y Y 1 F P
@@ -135,6 +129,19 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
 X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# raksts_1PIN
+#
+DEF raksts_1PIN CON 0 40 Y Y 1 F N
+F0 "CON" 0 100 60 H V C CNN
+F1 "raksts_1PIN" 0 -100 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+S -100 50 100 -50 0 1 0 N
+X ~ 1 -200 0 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
